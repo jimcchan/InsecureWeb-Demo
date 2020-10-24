@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>CRLFInjection</servlet-name>
+		<display-name>CRLFInjection</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.CRLFInjection</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>XSS</servlet-name>
+		<display-name>XSS</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.XSS</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PathTraversal</servlet-name>
+		<display-name>PathTraversal</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.PathTraversal</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ErrorMessageExposure</servlet-name>
+		<display-name>ErrorMessageExposure</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.ErrorMessageExposure</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SQLInjection</servlet-name>
+		<display-name>SQLInjection</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.SQLInjection</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OpenRedirect</servlet-name>
+		<display-name>OpenRedirect</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.OpenRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CRLFInjection</servlet-name>
+		<url-pattern>/crlfinjection</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>XSS</servlet-name>
+		<url-pattern>/xss</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PathTraversal</servlet-name>
+		<url-pattern>/pathtraversal</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorMessageExposure</servlet-name>
+		<url-pattern>/errormessageexposure</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SQLInjection</servlet-name>
+		<url-pattern>/sqlinjection</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OpenRedirect</servlet-name>
+		<url-pattern>/openredirect</url-pattern>
+	</servlet-mapping>
+</web-app>
+
